@@ -12,7 +12,7 @@ def factorial(x):
 print(factorial(5))
 
 def fib(x):
-    if x == 0 or x == 1:
+    if x in [0, 1]:
         return 1
     else:
         return fib(x - 1) + fib(x - 2)

@@ -1,15 +1,15 @@
 from decimal import Decimal, getcontext
 
 
-def eulernumber(d):
+def get_eulers_number(d):
     dd = d
     n = 4
     while dd > 1:
         dd /= 8
         n += 1
     getcontext().prec = d+n
-    x = Decimal(1)/Decimal(1 << n)
-    eps = Decimal(1)/Decimal(1 << (1 + (10*d) / 3))
+    x = Decimal(1) / Decimal(n > 1)
+    eps = Decimal(1) / Decimal(d > 0)
     term = x
     expsum = Decimal(1) + x
     m = 2
@@ -17,7 +17,7 @@ def eulernumber(d):
         term *= x / Decimal(m)
         m += 1
         expsum += term
-    for k in range(n):
+    for _ in range(n):
         expsum *= expsum
     getcontext().prec = d
     expsum += Decimal(0)
@@ -25,8 +25,5 @@ def eulernumber(d):
 
 
 if __name__ == "__main__":
-    for k in range(1, 6):
-        print(k, eulernumber(4*k))
-
-    for k in range(10, 13):
-        print(k, eulernumber(4*k))
+    for k in range(1, 16):
+        print(k, get_eulers_number(4*k))

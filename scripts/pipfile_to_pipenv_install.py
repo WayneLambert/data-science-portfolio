@@ -1,6 +1,8 @@
-""" Converts the contents of a Pipfile into a executable shell script with the
-    applicable `pipenv install ...` commands to rebuild the pipenv virtual
-    environment from scratch. """
+"""
+Converts the contents of a Pipfile into a executable shell script with the
+applicable `pipenv install ...` commands to rebuild the pipenv virtual
+environment from scratch.
+"""
 
 with open(file='Pipfile', mode='r') as file:
 

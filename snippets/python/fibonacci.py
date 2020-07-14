@@ -22,6 +22,7 @@ if __name__ == '__main__':
 
 # An alternative solution using a while loop and a generator
 def fibonacci_generator(previous, current, maximum):
+    # sourcery skip: while-to-for
     count = 0
     while count < maximum:
         previous, current = current, previous + current
@@ -32,7 +33,7 @@ def fibonacci_generator(previous, current, maximum):
 
 # `pass` statement is there only because the function requires it.
 if __name__ == '__main__':
-    for num in fibonacci_generator(previous=0, current=1, maximum=101):
+    for _ in fibonacci_generator(previous=0, current=1, maximum=101):
         pass
 
 
@@ -51,5 +52,5 @@ def fibonacci_recursive(num):
 
 
 if __name__ == "__main__":
-    for num in range(0, 101):
+    for num in range(101):
         print(f"Fib {num} = {fibonacci_recursive(num)}")

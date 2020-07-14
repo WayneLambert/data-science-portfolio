@@ -7,8 +7,7 @@ def factorial(n):
         return 1
     else:
         recurse = factorial(n-1)
-        result = n * recurse
-        return result
+        return n * recurse
 
 
 def estimate_pi():

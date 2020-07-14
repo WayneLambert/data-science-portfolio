@@ -1,4 +1,3 @@
-import babel.numbers as bn
 from decimal import Decimal
 import datetime
 
@@ -49,9 +48,7 @@ class Employee:
 
     @staticmethod
     def is_workday(day):
-        if 5 <= day.weekday() <= 6:
-            return False
-        return True
+        return not 5 <= day.weekday() <= 6
 
 
 print(f'Number of Employees before contructing an instance of the employee class: \

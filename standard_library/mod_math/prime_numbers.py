@@ -13,10 +13,7 @@ def is_prime(num: int) -> bool:
         return False
 
     max_divisor = floor(sqrt(num))
-    for divisor in range(3, 1 + max_divisor, 2):
-        if num % divisor == 0:
-            return False
-    return True
+    return all(num % divisor != 0 for divisor in range(3, 1 + max_divisor, 2))
 
 # ========= Time Function =========
 start_time = time()

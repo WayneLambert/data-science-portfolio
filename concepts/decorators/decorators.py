@@ -10,12 +10,8 @@ def transform_words(content, targets, transform):
         *targets* replaced with the result of applying *transform* to it."""
     result = ''
     for word in content.split():
-        if word in targets:
-            result += f'{transform(word)}'
-            return result
-        else:
-            result += f'{word}'
-            return result
+        result += f'{transform(word)}' if word in targets else f'{word}'
+        return result
 
 
 markdown_string = """My name is Wayne Lambert and I like football but I do

@@ -21,7 +21,7 @@ def binary_search(tmp_array, guess):
 
 
 if __name__ == '__main__':
-    million_item_array = array.array('i', (i for i in range(1, 1_000_001)))
+    million_item_array = array.array('i', iter(range(1, 1_000_001)))
     chosen_num = 646_234
 
     number_of_guesses = binary_search(million_item_array, chosen_num)

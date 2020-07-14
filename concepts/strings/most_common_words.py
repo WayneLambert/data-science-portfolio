@@ -1,8 +1,9 @@
 """ Retrieves the most common words within the given text file. """
 
+
 with open('concepts/strings/sample_text.txt', 'r') as file_to_check:
     # Count the frequency of the words
-    counts = dict()
+    counts = {}
     for line in file_to_check:
         words = line.split()
         for word in words:

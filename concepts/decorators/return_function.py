@@ -4,8 +4,7 @@ from random import choice
 
 def make_laugh_func():
     def get_laugh():
-        l = choice(('HAHAHAH', 'lol', 'tehehe'))
-        return l
+        return choice(('HAHAHAH', 'lol', 'tehehe'))
 
     return get_laugh
 

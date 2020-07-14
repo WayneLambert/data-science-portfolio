@@ -1,4 +1,6 @@
-"Calculates both the quotient and remainder of two arguments."
+"""
+Calculates both the quotient and remainder of two arguments
+"""
 
 import math
 

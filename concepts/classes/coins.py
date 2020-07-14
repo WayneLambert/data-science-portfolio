@@ -22,11 +22,7 @@ print(coin1.value)
 # Self can be any keyword, however the convention is to use "self"
 def __init__(self, rare = False):
     self.rare = rare
-    if self.rare:
-        self.value = 1.25
-    else:
-        self.value = 1.00
-
+    self.value = 1.25 if self.rare else 1.00
     self.colour = "greenish"
     self.num_edges = 12
     self.diameter = 23.03

@@ -15,9 +15,7 @@ test_string = "We wish you a merry Christmas and a happy new year"
 for letter in test_string:
     if letter.lower() in 'aeiou':
         num_vowels += 1
-    elif letter == " ":
-        pass
-    else:
+    elif letter != " ":
         num_consonants += 1
 
 print(f"{num_vowels} vowels and {num_consonants} consonants")
@@ -28,7 +26,7 @@ students = {
     "female": ["Sarah", "Huda", "Samantha", "Emily", "Elizabeth"]
 }
 
-for key in students.keys():
-    for name in students[key]:
+for key, value in students.items():
+    for name in value:
         if "o" in name:
             print(name)

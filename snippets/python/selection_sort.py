@@ -2,7 +2,7 @@
 """ The code is purposefully not written using Pythonic idioms """
 
 def selection_sort(array):
-    for i in range(0, len(array)):
+    for i in range(len(array)):
         min_index = i
         for j in range(i + 1, len(array)):
             if array[j] < array[min_index]:

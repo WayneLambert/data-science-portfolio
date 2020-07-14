@@ -18,10 +18,11 @@ def is_string_abecederian(test_word: str) -> bool:
         return True
 
 """ Loop over each line in the file and test if the word is abecedarian. """
+
 results = []
 with open('concepts/strings/words.txt', 'r') as test_file:
+    result = False
     for line in test_file:
-        result = False
         test_word = line.replace('\n', '')
         if is_string_abecederian(test_word):
             results.append(test_word)

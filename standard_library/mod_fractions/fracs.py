@@ -5,29 +5,25 @@ den = Fraction(4, 5)
 
 
 def add_frac(x, y):
-    added = x + y
-    return added
+    return x + y
 
 print(add_frac(num, den))
 
 
 def sub_frac(x, y):
-    subtracted = x - y
-    return subtracted
+    return x - y
 
 print(sub_frac(num, den))
 
 
 def mult_frac(x, y):
-    multiplied = x * y
-    return multiplied
+    return x * y
 
 print(mult_frac(num, den))
 
 
 def div_frac(x, y):
-    divided = x / y
-    return divided
+    return x / y
 
 print(div_frac(num, den))
 

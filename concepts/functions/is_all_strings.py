@@ -3,6 +3,7 @@
 # Method 1: List Comprehension
 # All elements in list are strings, therefore evaluates to True
 def is_all_strings(lst: list) -> bool:
+    # sourcery skip: comprehension-to-generator
     return all([isinstance(element, str) for element in lst])
 
 my_list = ['This', 'That', 'The Other']

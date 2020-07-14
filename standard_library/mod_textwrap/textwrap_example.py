@@ -23,8 +23,10 @@ print(len(shortened_str))
 
 # Wrap the original string (left-stripped) to characters
 wrapped_text = textwrap.wrap(unformatted_str.lstrip(), 20)
+
 # Prints list of wrapped text
 print(wrapped_text)
+
 # Iterate over the list to see each line individually
 for wrappedline in wrapped_text:
     print(wrappedline)

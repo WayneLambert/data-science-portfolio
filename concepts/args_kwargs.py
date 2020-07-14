@@ -1,7 +1,5 @@
 def contains_colour(colour, *args):
-    if colour in args:
-        return True
-    return False
+    return colour in args
 
 print(contains_colour("blue", "blue", "purple", "red", "green", "yellow", "pink"))
 
