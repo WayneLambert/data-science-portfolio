@@ -21,6 +21,8 @@ mypy = "==0.782"
 [packages]
 beautifulsoup4 = "==4.9.1"
 requests = "==2.24.0"
+datapane = "==0.6.12"
+seaborn = "==0.10.1"
 
 [requires]
 python_version = "3.8"
