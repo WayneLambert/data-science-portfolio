@@ -8,6 +8,12 @@
 docker system df -v
 ```
 
+### Enter a Bash Session Within the Docker Container
+
+```sh
+docker exec -it <container_name> /bin/sh
+```
+
 ### Check Network Settings
 
 ```sh
