@@ -1,15 +1,7 @@
 .venv/*
 .env
 .vscode/*
-.pytest_cache/*
 *__pycache__*
-logs/*
 
 # Ignored Files
-data_science/notebooks/stack_overflow.ipynb
-data_science/data_files/test.csv
-data_science/gmaps_api_test.ipynb
-data_science/int_vs_float_test.ipynb
-data_science/data_files/subscriptions.csv
-data_science/notebooks/subscriptions.ipynb
-stack_overflow/*
+experiments/*

@@ -4,25 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "==5.4.1"
-pylint = "==2.4.4"
-jupyter = "==1.0.0"
-bpython = "==0.19"
-ipython = "==7.16.1"
-autopep8 = "==1.5.3"
-hypothesis = "==5.16.3"
-bandit = "==1.6.2"
-interrogate = "==1.2.0"
-wily = "==1.16.0"
-pycodestyle = "==2.6.0"
-ipdb = "==0.13.2"
-mypy = "==0.782"
 
 [packages]
+jupyter = "==1.0.0"
+ipython = "==7.16.1"
 beautifulsoup4 = "==4.9.1"
 requests = "==2.24.0"
-datapane = "==0.6.12"
-seaborn = "==0.10.1"
 
 [requires]
 python_version = "3.8"

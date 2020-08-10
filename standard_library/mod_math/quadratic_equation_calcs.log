@@ -1,6 +1,0 @@
-INFO 2019-11-26 22:46:00,622 - Quadratic Formula with arguments of 1, 0, -4
-DEBUG 2019-11-26 22:46:00,622 - # Compute the discriminant
-DEBUG 2019-11-26 22:46:00,622 - 16.0
-DEBUG 2019-11-26 22:46:00,622 - # Compute the two roots
-DEBUG 2019-11-26 22:46:00,622 - # Return the roots
-DEBUG 2019-11-26 22:46:00,622 - (2.0, -2.0)
