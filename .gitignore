@@ -2,6 +2,8 @@
 .env
 .vscode/*
 *__pycache__*
+.DS_Store
 
 # Ignored Files
 experiments/*
+notebooks/.ipynb_checkpoints/*
