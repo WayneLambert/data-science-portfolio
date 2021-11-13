@@ -6,4 +6,5 @@
 
 # Ignored Files
 experiments/*
+interviews/*
 notebooks/.ipynb_checkpoints/*
